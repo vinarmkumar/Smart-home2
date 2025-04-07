@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Smart Home Control</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    
+</head>
+<body class = "backg">
+    <div class="container" >
+        <h1>Smart Home Control</h1>
+        <p class="subtitle">Advanced voice-controlled home automation</p>
+        
+        <div class="assistant-container">
+            <div class="assistant-response" id="assistant-response">
+                <p>Hello! I'm your smart home assistant. Try saying "turn on kitchen light"</p>
+            </div>
+            <button id="voice-command-btn" class="voice-btn">
+                <i class="fas fa-microphone"></i>
+            </button>
+        </div>
+        
+        <div class="rooms-container" >
+            <div class="room" id="kitchen-room" >
+                <h2>Kitchen</h2>
+                <div class="light-control">
+                    <div class="light-bulb" >
+                        <img id="kitchen-light-img" src="/static/images/bulb-off.png" alt="Kitchen Light">
+                        <div class="light-glow" id="kitchen-light-glow"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="room" id="dining-room">
+                <h2>Dining Room</h2>
+                <div class="light-control">
+                    <div class="light-bulb">
+                        <img id="dining-light-img" src="/static/images/bulb-off.png" alt="Dining Light">
+                        <div class="light-glow" id="dining-light-glow"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="room" id="living-room">
+                <h2>Living Room</h2>
+                <div class="light-control">
+                    <div class="light-bulb">
+                        <img id="living-room-light-img" src="/static/images/bulb-off.png" alt="Living Room Light">
+                        <div class="light-glow" id="living-room-light-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
